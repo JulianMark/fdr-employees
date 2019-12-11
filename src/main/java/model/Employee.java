@@ -22,4 +22,10 @@ public class Employee {
     private Integer donations;
     private float hoursWorked;
     private float errorMessage;
+
+    public Employee(Integer id, String name, String lastName) {
+        this.id = id;
+        this.name = name;
+        this.lastName = lastName;
+    }
 }
