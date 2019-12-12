@@ -2,6 +2,7 @@ package menu;
 
 import model.Employee;
 import org.json.JSONException;
+import org.springframework.http.ResponseEntity;
 
 import java.util.Scanner;
 
@@ -27,12 +28,14 @@ public class MainMenu {
             switch (response) {
                 case 1:
                     String []data = showLoginMenu();
-                    Employee employee = authUser(data);
-                    if (employee != null) {
+                    ResponseEntity<Employee> responseEntity =  authUser(data);
+                    if(responseEntity.getStatusCode().value() == 200){
+                        Employee employee = responseEntity.getBody();
                         showEmployeeMenu(employee);
                         response = 0;
-                    } else
-                        System.out.println("El usuario ingresado no existe");
+                    }else {
+                        response = 1;
+                    }
                     break;
                 case 0:
                     System.out.println("Adios");

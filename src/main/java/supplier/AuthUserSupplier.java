@@ -11,7 +11,7 @@ import org.springframework.web.client.RestTemplate;
 
 public class AuthUserSupplier {
 
-    public static Employee authUser(String [] data) throws JSONException {
+    public static ResponseEntity<Employee> authUser(String [] data) throws JSONException {
 
         JSONObject request = new JSONObject();
         request.put("nickname", data[0]);
@@ -24,7 +24,8 @@ public class AuthUserSupplier {
         final String URL = "http://localhost:9090/employee/login";
         RestTemplate rest = new RestTemplate();
         final ResponseEntity<Employee> employeeResponseEntity = rest.postForEntity(URL, entity, Employee.class);
-        Employee employee = employeeResponseEntity.getBody();
-        return employee;
+        //Employee employee = employeeResponseEntity.getBody();
+
+        return employeeResponseEntity;
     }
 }

@@ -8,8 +8,8 @@ import static menu.employeeMenu.FacerMenu.showFacerMenu;
 public class Main  {
 
     public static void main(String[] args) throws JSONException {
-        //showMenu();
-        Employee employee = new Employee(1,"JULIAN", "MARK");
-        showFacerMenu(employee);
+        showMenu();
+        //Employee employee = new Employee(1,"JULIAN", "MARK");
+        //showFacerMenu(employee);
     }
 }

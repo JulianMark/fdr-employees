@@ -1,10 +1,14 @@
+menu\employeeMenu\EmployeeMenu.class
+menu\employeeMenu\indicatorMenu\showIndicatorsMenu.class
+supplier\AuthUserSupplier.class
 Main.class
 menu\MainMenu.class
 menu\Login.class
-menu\employeeMenu\EmployeeMenu.class
 supplier\IndicatorSupplier.class
+model\OSC.class
 model\Employee.class
 model\Indicator.class
 menu\employeeMenu\FacerMenu.class
+menu\employeeMenu\indicatorMenu\showHistoricalIndicator.class
+menu\ReturnMenu.class
 model\Donation.class
-supplier\AuthUserSupplier.class
