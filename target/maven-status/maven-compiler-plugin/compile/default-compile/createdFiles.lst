@@ -1,5 +1,6 @@
 menu\employeeMenu\EmployeeMenu.class
 menu\employeeMenu\indicatorMenu\showIndicatorsMenu.class
+supplier\exception\Handler.class
 supplier\AuthUserSupplier.class
 Main.class
 menu\MainMenu.class

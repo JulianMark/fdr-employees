@@ -15,8 +15,8 @@ public class MainMenu {
 
     private static Scanner sc;
 
-    public static void showMenu() throws JSONException {
-        int response = 0;
+    public static void showMenu() throws JSONException{
+        int response;
         do {
             System.out.println("Seleccione la opcion deseada");
             System.out.println("1. Acceder");
@@ -32,8 +32,16 @@ public class MainMenu {
                     if(responseEntity.getStatusCode().value() == 200){
                         Employee employee = responseEntity.getBody();
                         showEmployeeMenu(employee);
-                        response = 0;
-                    }else {
+                    }
+                    if (responseEntity.getStatusCode().value() == 204){
+                        System.out.println("Empleado no encontrado");
+                        System.out.println(" ");
+                    }
+                    if (responseEntity.getStatusCode().value() == 400){
+                        response = 1;
+                    }
+                    if (responseEntity.getStatusCode().value() == 500){
+                        System.out.println("Error en el sistema, intente nuevamente más tarde");
                         response = 1;
                     }
                     break;

@@ -24,8 +24,7 @@ public class AuthUserSupplier {
         final String URL = "http://localhost:9090/employee/login";
         RestTemplate rest = new RestTemplate();
         final ResponseEntity<Employee> employeeResponseEntity = rest.postForEntity(URL, entity, Employee.class);
-        //Employee employee = employeeResponseEntity.getBody();
-
+        System.out.println(employeeResponseEntity.getStatusCode());
         return employeeResponseEntity;
     }
 }
