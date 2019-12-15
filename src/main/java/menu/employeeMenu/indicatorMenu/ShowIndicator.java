@@ -2,11 +2,11 @@ package menu.employeeMenu.indicatorMenu;
 
 import model.Indicator;
 
-public class showHistoricalIndicator {
+public class ShowIndicator {
 
-    public static void showHistoricalInd (Indicator indicator) {
+    public static void showIndicator(Indicator indicator, String title) {
 
-        System.out.println("Indicadores historicos");
+        System.out.println(title);
         System.out.println("Total donaciones: " + indicator.getTotalDonations());
         System.out.println("Promedio de captacion: " + indicator.obtainTotalAverageCatchment());
         System.out.println("Monto promedio: " + indicator.obtainTotalAverageAmount());
@@ -14,7 +14,5 @@ public class showHistoricalIndicator {
         System.out.println("Total horas productivas: " + indicator.getTotalProductiveHours());
         System.out.println("Total horas sin captacion: " + indicator.getTotalNonProductiveHours());
         System.out.println("Total recaudado: " + indicator.getTotalAmountDonations());
-
-
     }
 }

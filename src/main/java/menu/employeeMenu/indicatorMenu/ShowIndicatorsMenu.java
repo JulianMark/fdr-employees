@@ -1,20 +1,24 @@
 package menu.employeeMenu.indicatorMenu;
 
 import model.Indicator;
+import model.OSC;
 
+import java.util.List;
 import java.util.Scanner;
 
 import static menu.ReturnMenu.returnMenu;
-import static menu.employeeMenu.indicatorMenu.showHistoricalIndicator.showHistoricalInd;
-import static supplier.IndicatorSupplier.getIndicator;
+import static menu.employeeMenu.indicatorMenu.ShowIndicator.showIndicator;
+import static supplier.IndicatorSupplier.getHistoricalIndicator;
+import static supplier.OSCSupplier.getOSCs;
+import static menu.employeeMenu.indicatorMenu.ShowIndicatorsOSCs.showIndicatorsOSCs;
 
-public class showIndicatorsMenu {
+public class ShowIndicatorsMenu {
 
     private static Scanner sc;
     private static boolean flag = true;
     private static int response = 0;
 
-    public static void showIndicator (Integer idEmployee) {
+    public static void showIndicatorMenu(Integer idEmployee) {
 
         do {
             System.out.println("Selecciona la opción deseada");
@@ -29,14 +33,15 @@ public class showIndicatorsMenu {
             switch (response) {
                 case 1:
                     flag = false;
-                    Indicator indicator = getIndicator(idEmployee);
-                    showHistoricalInd(indicator);
+                    Indicator indicator = getHistoricalIndicator(idEmployee);
+                    showIndicator(indicator, "Resgistro indicadores historicos");
                     response = returnMenu();
 
                     break;
                 case 2:
                     flag = false;
-
+                    List<OSC> oscs = getOSCs(idEmployee);
+                    showIndicatorsOSCs(idEmployee,oscs);
                     break;
                 case 3:
                     flag = false;

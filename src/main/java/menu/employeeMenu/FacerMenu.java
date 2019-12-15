@@ -1,13 +1,9 @@
 package menu.employeeMenu;
 
-import menu.employeeMenu.indicatorMenu.showIndicatorsMenu;
+import menu.employeeMenu.indicatorMenu.ShowIndicatorsMenu;
 import model.Employee;
-import model.Indicator;
 
 import java.util.Scanner;
-
-import static menu.employeeMenu.indicatorMenu.showHistoricalIndicator.showHistoricalInd;
-import static supplier.IndicatorSupplier.getIndicator;
 
 public class FacerMenu {
 
@@ -30,7 +26,7 @@ public class FacerMenu {
             switch (response) {
                 case 1:
                     flag = false;
-                    showIndicatorsMenu.showIndicator(employee.getId());
+                    ShowIndicatorsMenu.showIndicatorMenu(employee.getId());
                     break;
                 default:
                     System.out.println("Debe ingresar una opcion correcta");
