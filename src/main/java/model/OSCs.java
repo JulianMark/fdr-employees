@@ -1,5 +1,6 @@
 package model;
 
+import java.util.List;
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -11,9 +12,8 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class OSC {
+public class OSCs {
 
-    private Integer id;
-    private String description;
-
+    private List <OSC> oscList;
+    private String errorMessage;
 }

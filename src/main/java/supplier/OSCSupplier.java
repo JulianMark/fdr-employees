@@ -1,17 +1,27 @@
 package supplier;
 
-import model.OSC;
+import model.OSCs;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.client.RestTemplate;
 
-import java.util.ArrayList;
-import java.util.List;
+import java.net.URI;
+import java.net.URISyntaxException;
 
 public class OSCSupplier {
 
-    public static List<OSC> getOSCs (Integer idEmployee) {
+    public static ResponseEntity<OSCs> getOSCs (Integer idEmployee) {
 
-        List<OSC> oscs = new ArrayList<OSC>();
-        oscs.add(new OSC(1,"AFULIC"));
-        oscs.add(new OSC(2,"SOLES"));
-        return oscs;
+        final String URL = "http://localhost:9090/employee/indicators/" + idEmployee;
+            URI uri = null;
+        try {
+            uri = new URI(URL);
+        } catch (URISyntaxException e) {
+            e.printStackTrace();
+        }
+        RestTemplate oscRestTemplate = new RestTemplate();
+        ResponseEntity<OSCs> oscResponseEntity = oscRestTemplate.getForEntity(uri, OSCs.class);
+        System.out.println(oscResponseEntity.getBody().getOscList());
+        System.out.println(oscResponseEntity.getStatusCode());
+        return oscResponseEntity;
     }
 }

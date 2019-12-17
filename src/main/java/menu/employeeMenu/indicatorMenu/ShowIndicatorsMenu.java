@@ -2,7 +2,10 @@ package menu.employeeMenu.indicatorMenu;
 
 import model.Indicator;
 import model.OSC;
+import model.OSCs;
+import org.springframework.http.ResponseEntity;
 
+import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
@@ -40,8 +43,12 @@ public class ShowIndicatorsMenu {
                     break;
                 case 2:
                     flag = false;
-                    List<OSC> oscs = getOSCs(idEmployee);
-                    showIndicatorsOSCs(idEmployee,oscs);
+                    ResponseEntity<OSCs> responseEntity = getOSCs(idEmployee);
+                    List<OSC> oscList = responseEntity.getBody().getOscList();
+                    for (OSC osc : oscList) {
+                        System.out.println(osc.getDescription());
+                    }
+                    //showIndicatorsOSCs(idEmployee,oscList);
                     break;
                 case 3:
                     flag = false;
