@@ -17,18 +17,9 @@ public class Indicator {
     private Float creditType;
     private Float totalProductiveHours;
     private Float totalNonProductiveHours;
-
-
-    public float obtainTotalAverageCatchment(){
-        return totalDonations / totalProductiveHours;
-    }
-
-    public float obtainTotalAverageAmount(){
-        return totalAmountDonations / totalDonations;
-    }
-
-    public float obtainTotalAverageCreditType(){
-        return (creditType / totalDonations) * 100 ;
-    }
+    private Float totalAverageCatchment;
+    private Float totalAverageAmount;
+    private Float totalAverageCreditType;
+    private String errorMessage;
 
 }

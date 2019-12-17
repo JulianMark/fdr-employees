@@ -17,15 +17,12 @@ public class Employee {
     private String name;
     private String lastName;
     private Integer idType;
-    private String nickname;
-    private String password;
-    private Integer donations;
-    private float hoursWorked;
     private float errorMessage;
 
-    public Employee(Integer id, String name, String lastName) {
+    public Employee(Integer id, String name, String lastName, Integer idType) {
         this.id = id;
         this.name = name;
         this.lastName = lastName;
+        this.idType = idType;
     }
 }

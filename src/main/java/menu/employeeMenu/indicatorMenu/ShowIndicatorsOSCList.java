@@ -9,10 +9,9 @@ import java.util.Scanner;
 import static menu.employeeMenu.indicatorMenu.ShowIndicator.showIndicator;
 import static supplier.IndicatorSupplier.getOSCIndicator;
 
-public class ShowIndicatorsOSCs {
+public class ShowIndicatorsOSCList {
 
     private static Scanner sc;
-    private static boolean flag = true;
     private static int response = 0;
 
     public static void showIndicatorsOSCs (Integer idEmployee, List<OSC> oscs){

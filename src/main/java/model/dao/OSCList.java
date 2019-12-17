@@ -13,8 +13,8 @@ import model.OSC;
 @Getter
 @Setter
 @ToString
-public class OSCs {
+public class OSCList {
 
-    private List <OSC> oscs;
+    private List <OSC> oscList;
     private String errorMessage;
 }
