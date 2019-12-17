@@ -1,14 +1,16 @@
 import model.Employee;
 import org.json.JSONException;
 
+import java.net.URISyntaxException;
+
 import static menu.MainMenu.showMenu;
 import static menu.employeeMenu.FacerMenu.showFacerMenu;
 
 public class Main  {
 
-    public static void main(String[] args) throws JSONException {
-        //showMenu();
-        Employee employee = new Employee(1,"JULIAN", "MARK");
-        showFacerMenu(employee);
+    public static void main(String[] args) throws JSONException, URISyntaxException {
+        showMenu();
+        //Employee employee = new Employee(1,"JULIAN", "MARK");
+        //showFacerMenu(employee);
     }
 }

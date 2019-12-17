@@ -1,21 +1,23 @@
 package menu;
 
+import model.http.LoginRequest;
+
 import java.util.Scanner;
 
 public class Login {
 
     private static Scanner sc;
 
-    public static String [] showLoginMenu(){
+    public static LoginRequest showLoginMenu(){
 
-        String [] data = new String[2];
         sc = new Scanner(System.in);
         System.out.println("Bienvenido");
         System.out.println("Ingrese su nickname:");
-        data [0] = sc.nextLine();
+        String nickname = sc.nextLine();
         System.out.println("Ingrese password:");
-        data [1] = sc.nextLine();
-        return data;
+        String password = sc.nextLine();
+
+        return new LoginRequest(nickname,password);
     }
 
 

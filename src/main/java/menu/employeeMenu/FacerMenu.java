@@ -11,7 +11,7 @@ public class FacerMenu {
     private static boolean flag = true;
     private static int response = 0;
 
-    public static void showFacerMenu (Employee employee){
+    public static void showFacerMenu (Employee employee) {
         final String employeeFullName = employee.getName()+" "+employee.getLastName() ;
         do{
             if (flag){

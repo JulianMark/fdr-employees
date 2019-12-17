@@ -1,6 +1,7 @@
 package menu;
 
 import model.Employee;
+import model.http.LoginRequest;
 import org.json.JSONException;
 import org.springframework.http.ResponseEntity;
 
@@ -9,13 +10,15 @@ import java.util.Scanner;
 import static menu.Login.showLoginMenu;
 import static menu.employeeMenu.EmployeeMenu.showEmployeeMenu;
 import static supplier.AuthUserSupplier.authUser;
+import static supplier.LoginSupplier.loginUser;
+
 
 
 public class MainMenu {
 
     private static Scanner sc;
 
-    public static void showMenu() throws JSONException{
+    public static void showMenu() throws JSONException {
         int response;
         do {
             System.out.println("Seleccione la opcion deseada");
@@ -27,8 +30,8 @@ public class MainMenu {
 
             switch (response) {
                 case 1:
-                    String []data = showLoginMenu();
-                    ResponseEntity<Employee> responseEntity =  authUser(data);
+                    LoginRequest loginRequest = showLoginMenu();
+                    ResponseEntity<Employee> responseEntity =  loginUser(loginRequest);
                     if(responseEntity.getStatusCode().value() == 200){
                         Employee employee = responseEntity.getBody();
                         showEmployeeMenu(employee);

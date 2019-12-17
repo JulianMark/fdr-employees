@@ -7,7 +7,6 @@ import java.util.List;
 import java.util.Scanner;
 
 import static menu.employeeMenu.indicatorMenu.ShowIndicator.showIndicator;
-import static supplier.IndicatorSupplier.getHistoricalIndicator;
 import static supplier.IndicatorSupplier.getOSCIndicator;
 
 public class ShowIndicatorsOSCs {

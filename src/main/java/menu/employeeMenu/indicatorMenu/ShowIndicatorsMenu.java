@@ -2,18 +2,17 @@ package menu.employeeMenu.indicatorMenu;
 
 import model.Indicator;
 import model.OSC;
-import model.OSCs;
+import model.dao.OSCs;
 import org.springframework.http.ResponseEntity;
 
-import java.util.Arrays;
 import java.util.List;
 import java.util.Scanner;
 
 import static menu.ReturnMenu.returnMenu;
 import static menu.employeeMenu.indicatorMenu.ShowIndicator.showIndicator;
+import static menu.employeeMenu.indicatorMenu.ShowIndicatorsOSCs.showIndicatorsOSCs;
 import static supplier.IndicatorSupplier.getHistoricalIndicator;
 import static supplier.OSCSupplier.getOSCs;
-import static menu.employeeMenu.indicatorMenu.ShowIndicatorsOSCs.showIndicatorsOSCs;
 
 public class ShowIndicatorsMenu {
 
@@ -44,11 +43,8 @@ public class ShowIndicatorsMenu {
                 case 2:
                     flag = false;
                     ResponseEntity<OSCs> responseEntity = getOSCs(idEmployee);
-                    List<OSC> oscList = responseEntity.getBody().getOscList();
-                    for (OSC osc : oscList) {
-                        System.out.println(osc.getDescription());
-                    }
-                    //showIndicatorsOSCs(idEmployee,oscList);
+                    List<OSC> oscList = responseEntity.getBody().getOscs();
+                    showIndicatorsOSCs(idEmployee,oscList);
                     break;
                 case 3:
                     flag = false;

@@ -8,11 +8,11 @@ public class ShowIndicator {
 
         System.out.println(title);
         System.out.println("Total donaciones: " + indicator.getTotalDonations());
-        System.out.println("Promedio de captacion: " + indicator.obtainTotalAverageCatchment());
-        System.out.println("Monto promedio: " + indicator.obtainTotalAverageAmount());
-        System.out.println("Total porcentaje TC: %" + indicator.obtainTotalAverageCreditType());
         System.out.println("Total horas productivas: " + indicator.getTotalProductiveHours());
         System.out.println("Total horas sin captacion: " + indicator.getTotalNonProductiveHours());
         System.out.println("Total recaudado: " + indicator.getTotalAmountDonations());
+        System.out.println("Total porcentaje TC: %" + indicator.obtainTotalAverageCreditType());
+        System.out.println("Monto promedio: " + indicator.obtainTotalAverageAmount());
+        System.out.println("Promedio de captacion: " + indicator.obtainTotalAverageCatchment());
     }
 }
