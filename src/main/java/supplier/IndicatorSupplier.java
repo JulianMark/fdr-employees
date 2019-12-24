@@ -1,6 +1,7 @@
 package supplier;
 
 import model.Indicator;
+import model.http.IndicatorOSCRequest;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
@@ -20,7 +21,7 @@ public class IndicatorSupplier {
         Map<String, String> params = new HashMap<String, String>();
         params.put("idEmployee", String.valueOf(idEmployee));
 
-        String url = "http://localhost:9090/employee/indicators/historical";
+        String url = "http://localhost:9091/employee/indicators/historical";
         HttpEntity entity = new HttpEntity(params, headers);
 
         RestTemplate restTemplate = new RestTemplate();
@@ -29,9 +30,22 @@ public class IndicatorSupplier {
         return responseEntity;
     }
 
-    public static Indicator getOSCIndicator(Integer idEmployee, Integer idOSC) {
+    public static ResponseEntity<Indicator> getOSCIndicator(IndicatorOSCRequest request) {
 
-        return new Indicator(2f,700f,1f,3f,1f,12f,5f,6f,null);
+        HttpHeaders headers = new HttpHeaders();
+        headers.set("Accept", "application/json");
+
+        Map<String, String> params = new HashMap<String, String>();
+        params.put("idEmployee", String.valueOf(request.getIdEmployee()));
+        params.put("idOSC", String.valueOf(request.getIdOSC()));
+
+        String url = "http://localhost:9091/employee/indicators/historical/osc";
+        HttpEntity entity = new HttpEntity(params, headers);
+
+        RestTemplate restTemplate = new RestTemplate();
+        ResponseEntity<Indicator> responseEntity = restTemplate.exchange(url, HttpMethod.POST, entity, Indicator.class);
+
+        return responseEntity;
 
     }
 }

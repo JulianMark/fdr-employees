@@ -2,10 +2,13 @@ package menu.employeeMenu.indicatorMenu;
 
 import model.Indicator;
 import model.OSC;
+import model.http.IndicatorOSCRequest;
+import org.springframework.http.ResponseEntity;
 
 import java.util.List;
 import java.util.Scanner;
 
+import static menu.ReturnMenu.returnMenu;
 import static menu.employeeMenu.indicatorMenu.ShowIndicator.showIndicator;
 import static supplier.IndicatorSupplier.getOSCIndicator;
 
@@ -29,8 +32,12 @@ public class ShowIndicatorsOSCList {
             OSC osc = new OSC(
                     oscs.get(response -1).getId(),
                     oscs.get(response -1).getDescription());
-            Indicator indicator = getOSCIndicator(idEmployee, osc.getId());
-            showIndicator(indicator,"Resgistro indicadores historicos de "+osc.getDescription());
+            ResponseEntity<Indicator> responseEntity = getOSCIndicator(new IndicatorOSCRequest(idEmployee,osc.getId()));
+            if(responseEntity.getStatusCode().value() == 200){
+                Indicator indicator = responseEntity.getBody();
+                showIndicator(indicator,"Resgistro indicadores historicos de "+osc.getDescription());
+                response = returnMenu();
+            }
         }
     }
 }

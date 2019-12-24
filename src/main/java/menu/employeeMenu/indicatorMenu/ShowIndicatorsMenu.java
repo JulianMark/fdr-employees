@@ -25,7 +25,7 @@ public class ShowIndicatorsMenu {
             System.out.println("Selecciona la opción deseada");
             System.out.println("1. Indicadores históricos");
             System.out.println("2. Indicadores por OSC");
-            System.out.println("3. Indicadores mensuales");
+            //System.out.println("3. Indicadores mensuales");
             System.out.println("0. Volver al menu anterior");
 
             sc =  new Scanner(System.in);
