@@ -11,14 +11,14 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class IndicatorOSCRequest {
+public class RangeRequest {
 
     private Integer idEmployee;
-    private Integer idOSC;
-    private String OSCDescription;
+    private String initialDate;
+    private String finalDate;
 
-    public IndicatorOSCRequest(Integer idEmployee, Integer idOSC) {
-        this.idEmployee = idEmployee;
-        this.idOSC = idOSC;
+    public RangeRequest(String initialDate, String finalDate) {
+        this.initialDate = initialDate;
+        this.finalDate = finalDate;
     }
 }

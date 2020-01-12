@@ -2,6 +2,8 @@ package supplier;
 
 import model.Indicator;
 import model.http.IndicatorOSCRequest;
+import model.http.MonthlyRequest;
+import model.http.RangeRequest;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
@@ -47,5 +49,81 @@ public class IndicatorSupplier {
 
         return responseEntity;
 
+    }
+
+    public static ResponseEntity<Indicator> getActualIndicator(Integer idEmployee) {
+
+        HttpHeaders headers = new HttpHeaders();
+        headers.set("Accept", "application/json");
+
+        Map<String, String> params = new HashMap<String, String>();
+        params.put("idEmployee", String.valueOf(idEmployee));
+
+        String url = "http://localhost:9091/employee/indicators/actually";
+        HttpEntity entity = new HttpEntity(params, headers);
+
+        RestTemplate restTemplate = new RestTemplate();
+        ResponseEntity<Indicator> responseEntity = restTemplate.exchange(url, HttpMethod.POST, entity, Indicator.class);
+
+        return responseEntity;
+    }
+
+    public static ResponseEntity<Indicator> getMonthlyIndicator(MonthlyRequest monthlyRequest) {
+
+        HttpHeaders headers = new HttpHeaders();
+        headers.set("Accept", "application/json");
+
+        Map<String, String> params = new HashMap<String, String>();
+        params.put("idEmployee", String.valueOf(monthlyRequest.getIdEmployee()));
+        params.put("monthNumber", String.valueOf(monthlyRequest.getMonthNumber()));
+        params.put("yearNumber", String.valueOf(monthlyRequest.getYearNumber()));
+        params.put("idOSC", String.valueOf(monthlyRequest.getIdOSC()));
+
+        String url = "http://localhost:9091/employee/indicators/monthly";
+        HttpEntity entity = new HttpEntity(params, headers);
+
+        RestTemplate restTemplate = new RestTemplate();
+        ResponseEntity<Indicator> responseEntity = restTemplate.exchange(url, HttpMethod.POST, entity, Indicator.class);
+
+        return responseEntity;
+    }
+
+    public static ResponseEntity<Indicator> getMonthlyOSCIndicator(MonthlyRequest monthlyRequest) {
+
+        HttpHeaders headers = new HttpHeaders();
+        headers.set("Accept", "application/json");
+
+        Map<String, String> params = new HashMap<String, String>();
+        params.put("idEmployee", String.valueOf(monthlyRequest.getIdEmployee()));
+        params.put("monthNumber", String.valueOf(monthlyRequest.getMonthNumber()));
+        params.put("yearNumber", String.valueOf(monthlyRequest.getYearNumber()));
+        params.put("idOSC", String.valueOf(monthlyRequest.getIdOSC()));
+
+        String url = "http://localhost:9091/employee/indicators/monthly/osc";
+        HttpEntity entity = new HttpEntity(params, headers);
+
+        RestTemplate restTemplate = new RestTemplate();
+        ResponseEntity<Indicator> responseEntity = restTemplate.exchange(url, HttpMethod.POST, entity, Indicator.class);
+
+        return responseEntity;
+    }
+
+    public static ResponseEntity<Indicator> getRangeIndicator(RangeRequest rangeRequest) {
+
+        HttpHeaders headers = new HttpHeaders();
+        headers.set("Accept", "application/json");
+
+        Map<String, String> params = new HashMap<String, String>();
+        params.put("idEmployee", String.valueOf(rangeRequest.getIdEmployee()));
+        params.put("initialDate",rangeRequest.getInitialDate());
+        params.put("finalDate", rangeRequest.getFinalDate());
+
+        String url = "http://localhost:9091/employee/indicators/range";
+        HttpEntity entity = new HttpEntity(params, headers);
+
+        RestTemplate restTemplate = new RestTemplate();
+        ResponseEntity<Indicator> responseEntity = restTemplate.exchange(url, HttpMethod.POST, entity, Indicator.class);
+
+        return responseEntity;
     }
 }
