@@ -1,4 +1,4 @@
-package model;
+package model.dto;
 
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
@@ -11,10 +11,13 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class Donation {
+public class DonationDTO {
 
-    private float amount;
-    private boolean payType;
     private Integer idEmployee;
+    private Integer idCampaign;
+    private String response;
 
+    public DonationDTO(String response) {
+        this.response = response;
+    }
 }

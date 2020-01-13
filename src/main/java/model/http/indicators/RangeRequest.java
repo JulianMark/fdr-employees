@@ -1,4 +1,4 @@
-package model.http;
+package model.http.indicators;
 
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;

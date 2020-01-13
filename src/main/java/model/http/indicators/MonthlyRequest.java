@@ -1,4 +1,4 @@
-package model.http;
+package model.http.indicators;
 
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
@@ -11,14 +11,17 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class IndicatorOSCRequest {
+public class MonthlyRequest {
 
     private Integer idEmployee;
+    private Integer monthNumber;
+    private Integer yearNumber;
     private Integer idOSC;
-    private String OSCDescription;
 
-    public IndicatorOSCRequest(Integer idEmployee, Integer idOSC) {
+    public MonthlyRequest(Integer idEmployee, Integer monthNumber, Integer yearNumber) {
         this.idEmployee = idEmployee;
-        this.idOSC = idOSC;
+        this.monthNumber = monthNumber;
+        this.yearNumber = yearNumber;
     }
+
 }

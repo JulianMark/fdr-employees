@@ -1,7 +1,6 @@
 package menu.employeeMenu.indicatorMenu;
 
-import model.http.MonthlyRequest;
-import model.http.RangeRequest;
+import model.http.indicators.RangeRequest;
 
 import java.util.Scanner;
 

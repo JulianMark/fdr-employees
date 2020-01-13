@@ -1,9 +1,9 @@
 package supplier;
 
 import model.Indicator;
-import model.http.IndicatorOSCRequest;
-import model.http.MonthlyRequest;
-import model.http.RangeRequest;
+import model.http.indicators.IndicatorOSCRequest;
+import model.http.indicators.MonthlyRequest;
+import model.http.indicators.RangeRequest;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;

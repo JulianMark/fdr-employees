@@ -2,13 +2,12 @@ package menu.employeeMenu.indicatorMenu;
 
 import model.OSC;
 import model.dao.OSCList;
-import model.http.IndicatorOSCRequest;
+import model.http.indicators.IndicatorOSCRequest;
 import org.springframework.http.ResponseEntity;
 
 import java.util.List;
 import java.util.Scanner;
 
-import static menu.employeeMenu.indicatorMenu.ShowIndicatorsOSCList.showIndicatorsOSCs;
 import static supplier.OSCSupplier.getOSCs;
 
 public class ShowIndicatorMenuOSCList {

@@ -1,14 +1,8 @@
 package menu.employeeMenu.indicatorMenu;
 
-import model.Indicator;
-import model.http.MonthlyRequest;
-import org.springframework.http.ResponseEntity;
+import model.http.indicators.MonthlyRequest;
 
 import java.util.Scanner;
-
-import static menu.ReturnMenu.returnMenu;
-import static menu.employeeMenu.indicatorMenu.ShowIndicator.showIndicator;
-import static supplier.IndicatorSupplier.getMonthlyIndicator;
 
 public class ShowMonthlyIndicators {
 
