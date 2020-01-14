@@ -1,4 +1,4 @@
-package menu;
+package menu.employeeMenu.login;
 
 import model.http.LoginRequest;
 

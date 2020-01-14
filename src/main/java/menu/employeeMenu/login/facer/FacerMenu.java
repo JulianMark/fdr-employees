@@ -1,4 +1,4 @@
-package menu.employeeMenu;
+package menu.employeeMenu.login.facer;
 
 import menu.employeeMenu.indicatorMenu.ShowIndicatorsMenu;
 import model.Employee;
@@ -28,7 +28,7 @@ public class FacerMenu {
                 System.out.println("Selecciona una opcion por su numero: ");
             }
             System.out.println("1. Indicadores");
-            System.out.println("2. Donaciones");
+            System.out.println("2. Realizar donacion");
 
             sc =  new Scanner(System.in);
             response = sc.nextInt();
@@ -52,7 +52,6 @@ public class FacerMenu {
                             response = returnMenu();
                         }
                     }else response = 0;
-
                     break;
                 default:
                     System.out.println("Debe ingresar una opcion correcta");

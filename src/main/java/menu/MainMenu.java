@@ -6,7 +6,7 @@ import org.springframework.http.ResponseEntity;
 
 import java.util.Scanner;
 
-import static menu.Login.showLoginMenu;
+import static menu.employeeMenu.login.Login.showLoginMenu;
 import static menu.employeeMenu.EmployeeMenu.showEmployeeMenu;
 import static supplier.LoginSupplier.loginUser;
 

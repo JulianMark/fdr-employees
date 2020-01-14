@@ -2,9 +2,8 @@ package menu.employeeMenu;
 
 import model.Employee;
 
-import java.net.URISyntaxException;
-
-import static menu.employeeMenu.FacerMenu.showFacerMenu;
+import static menu.employeeMenu.login.facer.FacerMenu.showFacerMenu;
+import static menu.employeeMenu.login.teamLeader.TeamLeaderMenu.showTeamLeaderMenu;
 
 public class EmployeeMenu {
 
@@ -12,6 +11,8 @@ public class EmployeeMenu {
 
         if (employee.getIdType() == 1){
             showFacerMenu(employee);
+        } if (employee.getIdType() == 2) {
+            showTeamLeaderMenu(employee);
         }
     }
 }
