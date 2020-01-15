@@ -2,18 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7157467a-21ef-4e36-a725-83f202153d59" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/menu/employeeMenu/campaignMenu/CampaignMenu.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/menu/employeeMenu/login/teamLeader/TeamLeaderMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/menu/employeeMenu/campaignMenu/CampaignListMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/menu/employeeMenu/campaignMenu/campaignOptionMenu/CampaignMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/menu/employeeMenu/campaignMenu/campaignOptionMenu/DashBoard/ShowDashBoardMenu.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/model/Campaign.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/menu/Login.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/menu/employeeMenu/login/Login.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/menu/MainMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/menu/MainMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/menu/employeeMenu/EmployeeMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/menu/employeeMenu/EmployeeMenu.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/menu/employeeMenu/FacerMenu.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/menu/employeeMenu/FacerMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/menu/employeeMenu/login/facer/FacerMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/menu/employeeMenu/campaignMenu/CampaignMenu.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/menu/employeeMenu/login/teamLeader/TeamLeaderMenu.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/menu/employeeMenu/login/teamLeader/TeamLeaderMenu.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/model/Employee.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/model/Employee.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/menu/Login.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/menu/MainMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/menu/MainMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/menu/ReturnMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/menu/ReturnMenu.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/menu/employeeMenu/EmployeeMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/menu/employeeMenu/EmployeeMenu.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/menu/employeeMenu/FacerMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/menu/employeeMenu/FacerMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/menu/employeeMenu/FacerMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/menu/employeeMenu/campaignMenu/CampaignMenu.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/menu/employeeMenu/donationMenu/showDonationMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/menu/employeeMenu/donationMenu/showDonationMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/menu/employeeMenu/donationMenu/showStatusEmployee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/menu/employeeMenu/donationMenu/showStatusEmployee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/menu/employeeMenu/indicatorMenu/ShowIndicator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/menu/employeeMenu/indicatorMenu/ShowIndicator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/menu/employeeMenu/indicatorMenu/ShowIndicatorMenuOSCList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/menu/employeeMenu/indicatorMenu/ShowIndicatorMenuOSCList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/menu/employeeMenu/indicatorMenu/ShowMonthlyIndicators.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/menu/employeeMenu/indicatorMenu/ShowMonthlyIndicators.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/menu/employeeMenu/indicatorMenu/ShowRangeIndicators.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/menu/employeeMenu/indicatorMenu/ShowRangeIndicators.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/menu/employeeMenu/indicatorMenu/showIndicatorsMenu.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/menu/employeeMenu/indicatorMenu/showIndicatorsMenu.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/Indicator.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/Indicator.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/OSC.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/OSC.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/dao/OSCList.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/dao/OSCList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/dto/DonationDTO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/dto/DonationDTO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/http/LoginRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/http/LoginRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/http/donations/DonationRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/http/donations/DonationRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/http/donations/DonationResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/http/donations/DonationResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/http/donations/EmployeeStatusResponse.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/http/donations/EmployeeStatusResponse.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/http/indicators/IndicatorOSCRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/http/indicators/IndicatorOSCRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/http/indicators/MonthlyRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/http/indicators/MonthlyRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/model/http/indicators/RangeRequest.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/model/http/indicators/RangeRequest.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/supplier/DonationSupplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/supplier/DonationSupplier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/supplier/IndicatorSupplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/supplier/IndicatorSupplier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/supplier/LoginSupplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/supplier/LoginSupplier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/supplier/OSCSupplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/supplier/OSCSupplier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/supplier/StatusEmployeeSupplier.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/supplier/StatusEmployeeSupplier.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -37,31 +65,54 @@
     <expand />
     <select />
   </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-169580214">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="22" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="22" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="4" />
+          <entry key="java" value="2392" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="2392" />
+          <entry key="PLAIN_TEXT" value="4" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/EmployeeMenu.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/login/teamLeader/TeamLeaderMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/login/facer/FacerMenu.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="68">
-              <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+            <state relative-caret-position="311">
+              <caret line="40" column="52" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/login/teamLeader/TeamLeaderMenu.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/campaignMenu/campaignOptionMenu/CampaignMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="41" selection-start-line="41" selection-end-line="41" />
+            <state relative-caret-position="440">
+              <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -70,10 +121,88 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/campaignMenu/CampaignMenu.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/login/facer/FacerMenu.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
-              <caret line="5" column="47" lean-forward="true" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+            <state relative-caret-position="231">
+              <caret line="38" column="51" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/campaignMenu/campaignOptionMenu/DashBoard/ShowDashBoardMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="52">
+              <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/indicatorMenu/ShowIndicator.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="132">
+              <caret line="6" column="54" lean-forward="true" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/AbstractList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="147" selection-start-line="147" selection-end-line="147" />
+              <folding>
+                <element signature="e#5047#5048#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/indicatorMenu/ShowIndicatorMenuOSCList.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="418">
+              <caret line="33" column="52" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/indicatorMenu/ShowIndicatorsMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="118">
+              <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/campaignMenu/CampaignListMenu.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="176">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/model/Employee.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="246">
+              <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -100,11 +229,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/menu/ReturnMenu.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/Locations.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/CampaignTypes.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/supplier/exception/Handler.java" />
         <option value="$PROJECT_DIR$/src/main/java/supplier/AuthUserSupplier.java" />
         <option value="$PROJECT_DIR$/src/main/java/menu/employeeMenu/indicatorMenu/showHistoricalIndicator.java" />
         <option value="$PROJECT_DIR$/src/main/java/menu/employeeMenu/indicatorMenu/showIndicatorsOSCs.java" />
@@ -115,7 +239,6 @@
         <option value="$PROJECT_DIR$/src/main/java/model/http/LoginRequest.java" />
         <option value="$PROJECT_DIR$/src/main/java/menu/Login.java" />
         <option value="$PROJECT_DIR$/src/main/java/model/dao/OSCs.java" />
-        <option value="$PROJECT_DIR$/src/main/java/model/Employee.java" />
         <option value="$PROJECT_DIR$/src/main/java/menu/MainMenu.java" />
         <option value="$PROJECT_DIR$/src/main/java/menu/employeeMenu/indicatorMenu/ShowIndicator.java" />
         <option value="$PROJECT_DIR$/src/main/java/menu/employeeMenu/indicatorMenu/ShowIndicatorsOSCs.java" />
@@ -149,8 +272,14 @@
         <option value="$PROJECT_DIR$/src/main/java/menu/employeeMenu/FacerMenu.java" />
         <option value="$PROJECT_DIR$/src/main/java/menu/employeeMenu/TeamLeaderMenu.java" />
         <option value="$PROJECT_DIR$/src/main/java/menu/employeeMenu/login/Login.java" />
-        <option value="$PROJECT_DIR$/src/main/java/menu/employeeMenu/login/teamLeader/TeamLeaderMenu.java" />
         <option value="$PROJECT_DIR$/src/main/java/menu/employeeMenu/campaignMenu/CampaignMenu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Campaign.java" />
+        <option value="$PROJECT_DIR$/src/main/java/menu/employeeMenu/campaignMenu/campaignOptionMenu/ShowCampaignMenu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/menu/employeeMenu/login/teamLeader/TeamLeaderMenu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/model/Employee.java" />
+        <option value="$PROJECT_DIR$/src/main/java/menu/employeeMenu/campaignMenu/campaignOptionMenu/DashBoard/ShowDashBoardMenu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/menu/employeeMenu/campaignMenu/CampaignListMenu.java" />
+        <option value="$PROJECT_DIR$/src/main/java/menu/employeeMenu/campaignMenu/campaignOptionMenu/CampaignMenu.java" />
       </list>
     </option>
   </component>
@@ -177,10 +306,10 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-8" />
+    <option name="x" value="952" />
     <option name="y" value="-8" />
-    <option name="width" value="699" />
-    <option name="height" value="744" />
+    <option name="width" value="976" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
@@ -190,7 +319,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -251,7 +379,20 @@
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="menu" type="462c0819:PsiDirectoryNode" />
               <item name="employeeMenu" type="462c0819:PsiDirectoryNode" />
-              <item name="donationMenu" type="462c0819:PsiDirectoryNode" />
+              <item name="campaignMenu" type="462c0819:PsiDirectoryNode" />
+              <item name="campaignOptionMenu" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fdr-employees" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fdr-employees" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
+              <item name="employeeMenu" type="462c0819:PsiDirectoryNode" />
+              <item name="campaignMenu" type="462c0819:PsiDirectoryNode" />
+              <item name="campaignOptionMenu" type="462c0819:PsiDirectoryNode" />
+              <item name="DashBoard" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="fdr-employees" type="b2602c69:ProjectViewProjectNode" />
@@ -284,18 +425,38 @@
               <item name="login" type="462c0819:PsiDirectoryNode" />
               <item name="facer" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="fdr-employees" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fdr-employees" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="menu" type="462c0819:PsiDirectoryNode" />
+              <item name="employeeMenu" type="462c0819:PsiDirectoryNode" />
+              <item name="login" type="462c0819:PsiDirectoryNode" />
+              <item name="teamLeader" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="fdr-employees" type="b2602c69:ProjectViewProjectNode" />
+              <item name="fdr-employees" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
       <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579038887620" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1579045903935" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -366,17 +527,18 @@
       <workItem from="1578868886951" duration="11209000" />
       <workItem from="1578959044184" duration="4922000" />
       <workItem from="1579037242983" duration="2084000" />
+      <workItem from="1579040081799" duration="6767000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="128435000" />
+    <option name="totallyTimeSpent" value="135202000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26399395" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26705757" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
@@ -386,7 +548,7 @@
       <window_info id="Web" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3295082" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.3321976" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49946696" visible="true" weight="0.33147943" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.22135706" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -396,7 +558,7 @@
       <window_info anchor="bottom" id="Terminal" order="9" />
       <window_info anchor="bottom" id="Event Log" order="10" sideWeight="0.50053304" side_tool="true" weight="0.29477197" />
       <window_info anchor="bottom" id="Version Control" order="11" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32367972" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32258064" />
       <window_info anchor="bottom" id="Java Enterprise" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -456,24 +618,6 @@
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/ArrayList.java" />
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-core/5.1.2.RELEASE/spring-core-5.1.2.RELEASE.jar!/org/springframework/util/CollectionUtils.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
-          <caret line="9" column="106" selection-start-line="9" selection-start-column="106" selection-end-line="9" selection-end-column="106" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/5.1.2.RELEASE/spring-web-5.1.2.RELEASE.jar!/org/springframework/http/client/support/InterceptingHttpAccessor.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="19" column="89" selection-start-line="19" selection-start-column="89" selection-end-line="19" selection-end-column="89" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Object.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/CharacterData.java" />
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/CharacterDataLatin1.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/Character.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/lang/String.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/net/URL.java" />
@@ -501,13 +645,6 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/supplier/exception/Handler.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/supplier/AuthUserSupplier.java" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/OSC.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/model/dao/OSCList.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
@@ -527,20 +664,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Employee.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="19" column="31" lean-forward="true" selection-start-line="15" selection-start-column="19" selection-end-line="19" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/model/Indicator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
         </state>
       </provider>
     </entry>
@@ -592,9 +715,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="27" selection-start-line="16" selection-start-column="27" selection-end-line="16" selection-end-column="27" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -602,26 +722,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/indicatorMenu/ShowIndicatorsMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-173">
-          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/menu/MainMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
         </state>
       </provider>
     </entry>
@@ -629,13 +729,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="14" column="22" selection-start-line="14" selection-start-column="22" selection-end-line="14" selection-end-column="22" />
         </state>
       </provider>
     </entry>
@@ -670,20 +763,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/EmployeeMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="14" column="41" selection-start-line="14" selection-start-column="41" selection-end-line="14" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/CampaignMenu.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/CampaignMenu.java" />
     <entry file="file://$PROJECT_DIR$/src/main/java/supplier/StatusEmployeeSupplier.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -694,75 +774,151 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/indicatorMenu/showCampaignIndicators.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/indicatorMenu/showCampaignIndicators.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/donationMenu/showStatusEmployee.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/donationMenu/showDonationMenu.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/login/Login.java" />
+    <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/EmployeeMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="70" selection-start-line="4" selection-start-column="70" selection-end-line="4" selection-end-column="70" />
+        <state relative-caret-position="242">
+          <caret line="14" column="24" selection-start-line="14" selection-start-column="24" selection-end-line="14" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/donationMenu/showStatusEmployee.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/menu/MainMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="426">
-          <caret line="34" column="5" selection-start-line="34" selection-start-column="5" selection-end-line="34" selection-end-column="5" />
+        <state relative-caret-position="572">
+          <caret line="34" column="32" selection-start-line="34" selection-start-column="32" selection-end-line="34" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="14" column="1" lean-forward="true" selection-start-line="14" selection-start-column="1" selection-end-line="14" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/OSC.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="13" column="13" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Indicator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="400">
+          <caret line="23" selection-start-line="23" selection-end-line="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Campaign.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="33" selection-start-line="17" selection-start-column="33" selection-end-line="17" selection-end-column="33" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/donationMenu/showDonationMenu.java">
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/function/Consumer.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="156">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
+        <state relative-caret-position="192">
+          <caret line="48" column="9" selection-start-line="48" selection-start-column="9" selection-end-line="48" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/indicatorMenu/ShowIndicatorMenuOSCList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="418">
+          <caret line="33" column="52" lean-forward="true" selection-start-line="33" selection-start-column="20" selection-end-line="33" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/campaignMenu/campaignOptionMenu/ShowCampaignMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="23" selection-start-line="4" selection-start-column="23" selection-end-line="4" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_181/src.zip!/java/util/AbstractList.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="147" selection-start-line="147" selection-end-line="147" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#5047#5048#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/indicatorMenu/ShowIndicator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="23" selection-start-line="6" selection-start-column="23" selection-end-line="6" selection-end-column="23" />
+        <state relative-caret-position="132">
+          <caret line="6" column="54" lean-forward="true" selection-start-line="6" selection-start-column="54" selection-end-line="6" selection-end-column="54" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/indicatorMenu/ShowIndicatorMenuOSCList.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/model/Employee.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="205">
-          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="26" selection-end-column="57" />
+        <state relative-caret-position="246">
+          <caret line="19" column="18" selection-start-line="19" selection-start-column="18" selection-end-line="19" selection-end-column="18" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/login/Login.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/login/facer/FacerMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="16" column="13" selection-start-line="16" selection-start-column="13" selection-end-line="16" selection-end-column="13" />
+        <state relative-caret-position="231">
+          <caret line="38" column="51" selection-start-line="38" selection-start-column="51" selection-end-line="38" selection-end-column="51" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/campaignMenu/CampaignMenu.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/indicatorMenu/ShowIndicatorsMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="47" lean-forward="true" selection-start-line="5" selection-start-column="47" selection-end-line="5" selection-end-column="47" />
+        <state relative-caret-position="118">
+          <caret line="22" column="23" selection-start-line="22" selection-start-column="23" selection-end-line="22" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/login/teamLeader/TeamLeaderMenu.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="41" selection-start-line="41" selection-end-line="41" />
+        <state relative-caret-position="311">
+          <caret line="40" column="52" selection-start-line="40" selection-start-column="52" selection-end-line="40" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/campaignMenu/CampaignListMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/campaignMenu/campaignOptionMenu/DashBoard/ShowDashBoardMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/menu/employeeMenu/campaignMenu/campaignOptionMenu/CampaignMenu.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="440">
+          <caret line="23" column="52" selection-start-line="23" selection-start-column="52" selection-end-line="23" selection-end-column="52" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

@@ -17,7 +17,7 @@ public class Employee {
     private String name;
     private String lastName;
     private Integer idType;
-    private float errorMessage;
+    private String errorMessage;
 
     public Employee(Integer id, String name, String lastName, Integer idType) {
         this.id = id;

@@ -1,12 +1,14 @@
 package menu.employeeMenu.login.teamLeader;
 
+import model.Campaign;
 import model.Employee;
 
 import java.util.Scanner;
 
 import static menu.ReturnMenu.returnMenu;
+import static menu.employeeMenu.campaignMenu.campaignOptionMenu.CampaignMenu.showCampaignMenuOption;
 import static menu.employeeMenu.login.facer.FacerMenu.showFacerMenu;
-import static menu.employeeMenu.campaignMenu.CampaignMenu.showCampaignMenu;
+import static menu.employeeMenu.campaignMenu.CampaignListMenu.showCampaignListMenu;
 
 public class TeamLeaderMenu {
 
@@ -36,9 +38,8 @@ public class TeamLeaderMenu {
                     break;
                 case 2:
                     flag = false;
-                    //Traer las campañas de este mes
-                    showCampaignMenu();
-                    //necesario seleccionar la campaña
+                    Campaign campaign = showCampaignListMenu(employee.getId());
+
                     response = returnMenu();
                     break;
                 case 3:
