@@ -1,6 +1,7 @@
 package supplier;
 
 import model.Indicator;
+import model.http.indicators.IndicatorCampaignRequest;
 import model.http.indicators.IndicatorOSCRequest;
 import model.http.indicators.MonthlyRequest;
 import model.http.indicators.RangeRequest;
@@ -119,6 +120,24 @@ public class IndicatorSupplier {
         params.put("finalDate", rangeRequest.getFinalDate());
 
         String url = "http://localhost:9091/employee/indicators/range";
+        HttpEntity entity = new HttpEntity(params, headers);
+
+        RestTemplate restTemplate = new RestTemplate();
+        ResponseEntity<Indicator> responseEntity = restTemplate.exchange(url, HttpMethod.POST, entity, Indicator.class);
+
+        return responseEntity;
+    }
+
+    public static ResponseEntity<Indicator> getCampaignIndicator(IndicatorCampaignRequest campaignRequest) {
+
+        HttpHeaders headers = new HttpHeaders();
+        headers.set("Accept", "application/json");
+
+        Map<String, String> params = new HashMap<String, String>();
+        params.put("idEmployee", String.valueOf(campaignRequest.getIdEmployee()));
+        params.put("idCampaign",String.valueOf(campaignRequest.getIdCampaign()));
+
+        String url = "http://localhost:9091/employee/indicators/campaign";
         HttpEntity entity = new HttpEntity(params, headers);
 
         RestTemplate restTemplate = new RestTemplate();

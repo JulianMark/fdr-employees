@@ -25,7 +25,6 @@ public class TeamLeaderMenu {
             }
             System.out.println("1. Mi Dashboard");
             System.out.println("2. Campañas");
-            System.out.println("3. Dashboard de tu equipo");
 
             sc =  new Scanner(System.in);
             response = sc.nextInt();
@@ -39,18 +38,13 @@ public class TeamLeaderMenu {
                 case 2:
                     flag = false;
                     Campaign campaign = showCampaignListMenu(employee.getId());
+                    showCampaignMenuOption(campaign);
 
-                    response = returnMenu();
-                    break;
-                case 3:
-                    flag = false;
-                    response = returnMenu();
                     break;
                 default:
                     System.out.println("Debe ingresar una opcion correcta");
             }
         }while (response != 0);
-
 
     }
 }

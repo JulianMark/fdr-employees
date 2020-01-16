@@ -1,6 +1,8 @@
 package menu.employeeMenu.indicatorMenu;
 
+import model.Campaign;
 import model.Indicator;
+import model.http.indicators.IndicatorCampaignRequest;
 import model.http.indicators.IndicatorOSCRequest;
 import model.http.indicators.MonthlyRequest;
 import model.http.indicators.RangeRequest;
@@ -9,6 +11,7 @@ import org.springframework.http.ResponseEntity;
 import java.util.Scanner;
 
 import static menu.ReturnMenu.returnMenu;
+import static menu.employeeMenu.campaignMenu.CampaignListMenu.showCampaignListMenu;
 import static menu.employeeMenu.indicatorMenu.ShowIndicator.showIndicator;
 import static menu.employeeMenu.indicatorMenu.ShowIndicatorMenuOSCList.showIndicatorMenuOSCList;
 import static menu.employeeMenu.indicatorMenu.ShowMonthlyIndicators.showMonthlyIndicator;
@@ -30,6 +33,7 @@ public class ShowIndicatorsMenu {
             System.out.println("4. Indicadores mensuales");
             System.out.println("5. Indicadores mensuales por OSC");
             System.out.println("6. Indicadores por rango de fechas");
+            System.out.println("7. Indicadores por campaña");
             System.out.println("0. Volver al menu anterior");
 
             sc =  new Scanner(System.in);
@@ -88,6 +92,16 @@ public class ShowIndicatorsMenu {
                     if(responseEntityRangeIndicator.getStatusCode().value() == 200){
                         Indicator indicator = responseEntityRangeIndicator.getBody();
                         showIndicator(indicator,"Registro indicadores por rango");
+                        response = returnMenu();
+                    }
+                    break;
+                case 7:
+                    Campaign campaign = showCampaignListMenu(idEmployee);
+                    IndicatorCampaignRequest indicatorCampaignRequest = new IndicatorCampaignRequest(idEmployee,campaign.getId());
+                    ResponseEntity<Indicator> indicatorResponseEntity = getCampaignIndicator(indicatorCampaignRequest);
+                    if(indicatorResponseEntity.getStatusCode().value() == 200){
+                        Indicator indicator = indicatorResponseEntity.getBody();
+                        showIndicator(indicator,"Resgistro indicadores de la campaña"+campaign.getName());
                         response = returnMenu();
                     }
                     break;

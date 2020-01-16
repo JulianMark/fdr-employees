@@ -4,6 +4,7 @@ import model.Campaign;
 
 import java.util.Scanner;
 
+import static menu.ReturnMenu.returnMenu;
 import static menu.employeeMenu.campaignMenu.campaignOptionMenu.DashBoard.ShowDashBoardMenu.showDashBoardMenuEmployeeList;
 
 public class CampaignMenu  {
@@ -13,19 +14,22 @@ public class CampaignMenu  {
         Integer result;
         Scanner sc = new Scanner(System.in);
         System.out.println(campaign.getName()
-                +" "+campaign.getDescription()
-                +" "+descriptionTypeCampaign(campaign.getCampaignType()));
+                +" "+descriptionTypeCampaign(campaign.getCampaignType())
+                +" "+campaign.getDescription());
         System.out.println("1.- Indicadores");
         System.out.println("2.- DashBoard");
 
         result = sc.nextInt();
 
         if (result == 1) {
-            //ShowIndicador de campania seleccionada
+            System.out.println("indicadores de campaña");
+            result = returnMenu();
         }
         if (result == 2){
             Integer idEmployee = showDashBoardMenuEmployeeList(campaign.getId());
             //ShowIndicador del empleado elegido
+            System.out.println("indicadores de los facer");
+            result = returnMenu();
         }
 
     }
