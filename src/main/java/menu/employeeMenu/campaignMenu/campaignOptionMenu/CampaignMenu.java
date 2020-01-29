@@ -5,7 +5,7 @@ import model.Campaign;
 import java.util.Scanner;
 
 import static menu.ReturnMenu.returnMenu;
-import static menu.employeeMenu.campaignMenu.campaignOptionMenu.DashBoard.ShowDashBoardMenu.showDashBoardMenuEmployeeList;
+import static menu.employeeMenu.campaignMenu.campaignOptionMenu.DashBoard.ShowDashboardMenu.showDashBoardMenuEmployeeList;
 
 public class CampaignMenu  {
 
@@ -17,7 +17,7 @@ public class CampaignMenu  {
                 +" "+descriptionTypeCampaign(campaign.getCampaignType())
                 +" "+campaign.getDescription());
         System.out.println("1.- Indicadores");
-        System.out.println("2.- DashBoard");
+        System.out.println("2.- Dashboard");
 
         result = sc.nextInt();
 

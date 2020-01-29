@@ -9,7 +9,6 @@ import static menu.ReturnMenu.returnMenu;
 import static menu.employeeMenu.campaignMenu.campaignOptionMenu.CampaignMenu.showCampaignMenuOption;
 import static menu.employeeMenu.login.facer.FacerMenu.showFacerMenu;
 import static menu.employeeMenu.campaignMenu.CampaignListMenu.showCampaignListMenu;
-
 public class TeamLeaderMenu {
 
     private static Scanner sc;
@@ -39,7 +38,6 @@ public class TeamLeaderMenu {
                     flag = false;
                     Campaign campaign = showCampaignListMenu(employee.getId());
                     showCampaignMenuOption(campaign);
-
                     break;
                 default:
                     System.out.println("Debe ingresar una opcion correcta");

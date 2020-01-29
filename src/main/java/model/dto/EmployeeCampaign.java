@@ -1,4 +1,5 @@
-package model;
+package model.dto;
+
 import lombok.NoArgsConstructor;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
@@ -10,17 +11,17 @@ import lombok.ToString;
 @Getter
 @Setter
 @ToString
-public class Indicator {
+public class EmployeeCampaign {
 
+    private Integer id;
+    private String name;
+    private String lastName;
     private Float totalDonations;
     private Float totalAmountDonations;
-    private Float creditType;
     private Float totalProductiveHours;
     private Float totalNonProductiveHours;
     private Float totalAverageCatchment;
     private Float totalAverageAmount;
-    private Float totalAverageCreditType;
-    private String errorMessage;
-
-
+    private String initialDate;
+    private String finalDate;
 }

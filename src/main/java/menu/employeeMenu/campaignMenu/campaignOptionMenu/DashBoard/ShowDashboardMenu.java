@@ -1,13 +1,12 @@
 package menu.employeeMenu.campaignMenu.campaignOptionMenu.DashBoard;
 
-import model.Campaign;
 import model.Employee;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-public class ShowDashBoardMenu {
+public class ShowDashboardMenu {
 
     public static Integer showDashBoardMenuEmployeeList (Integer idCampaign) {
 
