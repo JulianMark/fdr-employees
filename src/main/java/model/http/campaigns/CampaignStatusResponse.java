@@ -18,5 +18,4 @@ public class CampaignStatusResponse {
 
     private List<EmployeeCampaign> employeeList;
     private String errorMessage;
-
 }

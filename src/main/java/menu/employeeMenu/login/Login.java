@@ -19,6 +19,4 @@ public class Login {
 
         return new LoginRequest(nickname,password);
     }
-
-
 }

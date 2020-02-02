@@ -49,7 +49,6 @@ public class IndicatorSupplier {
         ResponseEntity<Indicator> responseEntity = restTemplate.exchange(url, HttpMethod.POST, entity, Indicator.class);
 
         return responseEntity;
-
     }
 
     public static ResponseEntity<Indicator> getActualIndicator(Integer idEmployee) {

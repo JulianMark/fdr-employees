@@ -1,6 +1,7 @@
 package menu.employeeMenu.indicatorMenu;
 
 import model.Campaign;
+import model.Employee;
 import model.Indicator;
 import model.http.indicators.IndicatorCampaignRequest;
 import model.http.indicators.IndicatorOSCRequest;
@@ -23,7 +24,7 @@ public class ShowIndicatorsMenu {
     private static Scanner sc;
     private static int response = 0;
 
-    public static void showIndicatorMenu(Integer idEmployee) {
+    public static void showIndicatorMenu(Employee employee) {
 
         do {
             System.out.println("Selecciona la opción deseada");
@@ -41,7 +42,7 @@ public class ShowIndicatorsMenu {
 
             switch (response) {
                 case 1:
-                    ResponseEntity<Indicator> responseEntityHistoricalIndicator = getHistoricalIndicator(idEmployee);
+                    ResponseEntity<Indicator> responseEntityHistoricalIndicator = getHistoricalIndicator(employee.getId());
                     if (responseEntityHistoricalIndicator.getStatusCode().value() == 200){
                         Indicator indicator = responseEntityHistoricalIndicator.getBody();
                         showIndicator(indicator, "Resgistro indicadores historicos");
@@ -49,7 +50,7 @@ public class ShowIndicatorsMenu {
                     }
                     break;
                 case 2:
-                    IndicatorOSCRequest indicatorOSCRequest = showIndicatorMenuOSCList(idEmployee);
+                    IndicatorOSCRequest indicatorOSCRequest = showIndicatorMenuOSCList(employee.getId());
                     if (indicatorOSCRequest.getIdOSC() == null) response = returnMenu();
                     ResponseEntity<Indicator> responseEntity = getOSCIndicator(indicatorOSCRequest);
                     if(responseEntity.getStatusCode().value() == 200){
@@ -59,7 +60,7 @@ public class ShowIndicatorsMenu {
                     }
                     break;
                 case 3:
-                    ResponseEntity<Indicator> responseEntityActualIndicator = getActualIndicator(idEmployee);
+                    ResponseEntity<Indicator> responseEntityActualIndicator = getActualIndicator(employee.getId());
                     if(responseEntityActualIndicator.getStatusCode().value() == 200) {
                         Indicator indicator = responseEntityActualIndicator.getBody();
                         showIndicator(indicator,"Resgistro de indicadores actuales");
@@ -67,17 +68,17 @@ public class ShowIndicatorsMenu {
                     }
                     break;
                 case 4:
-                    MonthlyRequest monthlyRequest = showMonthlyIndicator(idEmployee);
+                    MonthlyRequest monthlyRequest = showMonthlyIndicator(employee.getId());
                     ResponseEntity<Indicator> responseEntityMonthlyIndicator = getMonthlyIndicator(monthlyRequest);
                     if(responseEntityMonthlyIndicator.getStatusCode().value() == 200) {
                         Indicator indicator = responseEntityMonthlyIndicator.getBody();
-                        showIndicator(indicator, "Registro indicadores mensuales de "+idEmployee);
+                        showIndicator(indicator, "Registro indicadores mensuales de "+employee);
                         response = returnMenu();
                     }
                     break;
                 case 5:
-                    MonthlyRequest monthlyOSCRequest = showMonthlyIndicator(idEmployee);
-                    IndicatorOSCRequest indicatorMonthlyOSCRequest = showIndicatorMenuOSCList(idEmployee);
+                    MonthlyRequest monthlyOSCRequest = showMonthlyIndicator(employee.getId());
+                    IndicatorOSCRequest indicatorMonthlyOSCRequest = showIndicatorMenuOSCList(employee.getId());
                     monthlyOSCRequest.setIdOSC(indicatorMonthlyOSCRequest.getIdOSC());
                     ResponseEntity<Indicator> responseEntityMonthlyOSCIndicator = getMonthlyOSCIndicator(monthlyOSCRequest);
                     if(responseEntityMonthlyOSCIndicator.getStatusCode().value() == 200) {
@@ -87,7 +88,7 @@ public class ShowIndicatorsMenu {
                     }
                     break;
                 case 6:
-                    RangeRequest rangeRequest = showRangeIndicator(idEmployee);
+                    RangeRequest rangeRequest = showRangeIndicator(employee.getId());
                     ResponseEntity<Indicator> responseEntityRangeIndicator = getRangeIndicator(rangeRequest);
                     if(responseEntityRangeIndicator.getStatusCode().value() == 200){
                         Indicator indicator = responseEntityRangeIndicator.getBody();
@@ -96,8 +97,8 @@ public class ShowIndicatorsMenu {
                     }
                     break;
                 case 7:
-                    Campaign campaign = showCampaignListMenu(idEmployee);
-                    IndicatorCampaignRequest indicatorCampaignRequest = new IndicatorCampaignRequest(idEmployee,campaign.getId());
+                    Campaign campaign = showCampaignListMenu(employee);
+                    IndicatorCampaignRequest indicatorCampaignRequest = new IndicatorCampaignRequest(employee.getId(),campaign.getId());
                     ResponseEntity<Indicator> indicatorResponseEntity = getCampaignIndicator(indicatorCampaignRequest);
                     if(indicatorResponseEntity.getStatusCode().value() == 200){
                         Indicator indicator = indicatorResponseEntity.getBody();
@@ -110,9 +111,7 @@ public class ShowIndicatorsMenu {
                     break;
                 default:
                     System.out.println("Debe ingresar una opcion correcta");
-
             }
         } while (response != 0);
     }
-
 }

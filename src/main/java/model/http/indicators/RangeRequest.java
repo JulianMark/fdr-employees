@@ -16,9 +16,4 @@ public class RangeRequest {
     private Integer idEmployee;
     private String initialDate;
     private String finalDate;
-
-    public RangeRequest(String initialDate, String finalDate) {
-        this.initialDate = initialDate;
-        this.finalDate = finalDate;
-    }
 }

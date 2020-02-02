@@ -22,8 +22,10 @@ public class TeamLeaderMenu {
                 System.out.println("Bienvenido "+ employeeFullName);
                 System.out.println("Selecciona una opcion por su numero: ");
             }
+            System.out.println(" ");
             System.out.println("1. Mi Dashboard");
             System.out.println("2. Campañas");
+            System.out.println("0. Salir");
 
             sc =  new Scanner(System.in);
             response = sc.nextInt();
@@ -36,13 +38,15 @@ public class TeamLeaderMenu {
                     break;
                 case 2:
                     flag = false;
-                    Campaign campaign = showCampaignListMenu(employee.getId());
-                    showCampaignMenuOption(campaign);
+                    Campaign campaign = showCampaignListMenu(employee);
+                    showCampaignMenuOption(employee,campaign);
+                    break;
+                case 0:
+                    System.out.println("Adios");
                     break;
                 default:
                     System.out.println("Debe ingresar una opcion correcta");
             }
         }while (response != 0);
-
     }
 }

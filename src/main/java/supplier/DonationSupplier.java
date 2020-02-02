@@ -1,9 +1,7 @@
 package supplier;
 
-import model.Indicator;
 import model.http.donations.DonationRequest;
 import model.http.donations.DonationResponse;
-import model.http.indicators.MonthlyRequest;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;

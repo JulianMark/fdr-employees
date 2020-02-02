@@ -15,5 +15,4 @@ public class IndicatorCampaignRequest {
 
     private Integer idEmployee;
     private Integer idCampaign;
-
 }

@@ -7,10 +7,8 @@ import org.springframework.http.ResponseEntity;
 import java.util.Scanner;
 
 import static menu.employeeMenu.login.Login.showLoginMenu;
-import static menu.employeeMenu.EmployeeMenu.showEmployeeMenu;
+import static menu.employeeMenu.controller.ControllerEmployeeMenu.controllerEmployeeMenu;
 import static supplier.LoginSupplier.loginUser;
-
-
 
 public class MainMenu {
 
@@ -32,7 +30,7 @@ public class MainMenu {
                     ResponseEntity<Employee> responseEntity =  loginUser(loginRequest);
                     if(responseEntity.getStatusCode().value() == 200){
                         Employee employee = responseEntity.getBody();
-                        showEmployeeMenu(employee);
+                        controllerEmployeeMenu(employee);
                     }
                     if (responseEntity.getStatusCode().value() == 204){
                         System.out.println("Empleado no encontrado");
@@ -53,7 +51,5 @@ public class MainMenu {
                     System.out.println("Ingresa una opcion correcta");
             }
         } while (response !=0);
-
     }
-
 }

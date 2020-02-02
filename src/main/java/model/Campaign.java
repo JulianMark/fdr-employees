@@ -17,5 +17,4 @@ public class Campaign {
     private String name;
     private Integer campaignType;
     private String description;
-
 }
