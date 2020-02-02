@@ -21,6 +21,4 @@ public class Indicator {
     private Float totalAverageAmount;
     private Float totalAverageCreditType;
     private String errorMessage;
-
-
 }

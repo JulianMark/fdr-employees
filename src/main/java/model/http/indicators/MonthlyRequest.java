@@ -23,5 +23,4 @@ public class MonthlyRequest {
         this.monthNumber = monthNumber;
         this.yearNumber = yearNumber;
     }
-
 }

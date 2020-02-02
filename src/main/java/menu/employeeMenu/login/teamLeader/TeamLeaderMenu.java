@@ -48,6 +48,5 @@ public class TeamLeaderMenu {
                     System.out.println("Debe ingresar una opcion correcta");
             }
         }while (response != 0);
-
     }
 }

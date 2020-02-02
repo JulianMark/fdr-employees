@@ -18,11 +18,4 @@ public class Employee {
     private String lastName;
     private Integer idType;
     private String errorMessage;
-
-    public Employee(Integer id, String name, String lastName, Integer idType) {
-        this.id = id;
-        this.name = name;
-        this.lastName = lastName;
-        this.idType = idType;
-    }
 }

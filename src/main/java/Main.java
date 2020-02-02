@@ -1,8 +1,5 @@
 import model.Campaign;
 import model.Employee;
-import org.json.JSONException;
-
-import java.net.URISyntaxException;
 
 import static menu.MainMenu.showMenu;
 import static menu.employeeMenu.campaignMenu.campaignOptionMenu.CampaignMenu.showCampaignMenuOption;
@@ -12,7 +9,7 @@ import static menu.employeeMenu.login.teamLeader.TeamLeaderMenu.showTeamLeaderMe
 
 public class Main  {
 
-    public static void main(String[] args) throws JSONException, URISyntaxException {
+    public static void main(String[] args){
         //Employee employee = new Employee(2,"Daniela", "Sanz",2);
         showMenu();
         //Employee employee = new Employee(1,"Julian","Mark",1);
@@ -20,6 +17,5 @@ public class Main  {
         //showTeamLeaderMenu(employee);
         //Campaign campaign = new Campaign(1,"RIO CUARTO",1,"AFULIC");
         //showCampaignMenuOption(campaign);
-
     }
 }

@@ -11,6 +11,7 @@ public class showDonationMenu {
     private static Scanner sc = new Scanner(System.in);
 
     public static DonationRequest showDonationMenu (DonationDTO donationDTO){
+
         System.out.println("Ingrese nombre del donante: ");
         String name = sc.nextLine();
         System.out.println("Ingrese apellido del donante: ");

@@ -20,7 +20,7 @@ public class CampaignMenu  {
     private static int response = 0;
 
     public static void showCampaignMenuOption (Employee employee, Campaign campaign){
-        Scanner sc = new Scanner(System.in);
+
         System.out.println(campaign.getName()
                 +" "+descriptionTypeCampaign(campaign.getCampaignType())
                 +" "+campaign.getDescription());
@@ -40,7 +40,6 @@ public class CampaignMenu  {
             showCampaignListMenu(employee);
         }
     }
-
 
     private static void getEmployeesCampaignList (List<EmployeeCampaign> list) {
         String tabulation = "%-10s%-10s%-10s%-10s%-10s%-10s%-10s%-10s%-10s%-30s%-20s\n";
@@ -66,7 +65,6 @@ public class CampaignMenu  {
             sumTotalProductiveHours += employee.getTotalProductiveHours();
             sumTotalNonProductiveHours += employee.getTotalNonProductiveHours();
             totalAverageCreditType += (employee.getTotalAverageCreditType()/100) * employee.getTotalDonations();
-
         }
 
         Float totalAverageCatchment = sumTotalDonations / sumTotalProductiveHours;
@@ -76,9 +74,7 @@ public class CampaignMenu  {
         System.out.printf(tabulation,"","TOTALES",sumTotalDonations,sumTotalAmountDonations
                 ,roundToFloat(totalAverageCatchment),roundToFloat(totalAverageAmount),roundToFloat(TC)
                 ,roundToFloat(sumTotalProductiveHours),roundToFloat(sumTotalNonProductiveHours),"-","-");
-
     }
-
 
     private static String descriptionTypeCampaign (Integer campaignType){
         if (campaignType == 1) return "ITINERANCIA";
@@ -86,6 +82,7 @@ public class CampaignMenu  {
         if (campaignType == 3) return "EVENTOS";
         return "";
     }
+
     private static Float roundToFloat (Float number) {
         DecimalFormatSymbols colonFormat = new DecimalFormatSymbols();
         colonFormat.setDecimalSeparator('.');

@@ -19,6 +19,5 @@ public class ShowRangeIndicators {
         String finalDate = sc.nextLine();
 
         return new RangeRequest(idEmployee, initialDate, finalDate);
-
     }
 }

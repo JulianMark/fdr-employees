@@ -9,7 +9,6 @@ public class ShowMonthlyIndicators {
     private static Scanner sc;
     private static int response = 0;
 
-
     public static MonthlyRequest showMonthlyIndicator(Integer idEmployee){
 
         sc =  new Scanner(System.in);
@@ -19,6 +18,5 @@ public class ShowMonthlyIndicators {
         int yearNumber = sc.nextInt();
 
         return new MonthlyRequest(idEmployee, monthNumber, yearNumber);
-
     }
 }

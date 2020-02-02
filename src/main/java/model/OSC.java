@@ -15,5 +15,4 @@ public class OSC {
 
     private Integer id;
     private String description;
-
 }

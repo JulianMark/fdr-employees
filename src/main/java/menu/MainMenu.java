@@ -10,8 +10,6 @@ import static menu.employeeMenu.login.Login.showLoginMenu;
 import static menu.employeeMenu.controller.ControllerEmployeeMenu.controllerEmployeeMenu;
 import static supplier.LoginSupplier.loginUser;
 
-
-
 public class MainMenu {
 
     private static Scanner sc;
@@ -53,7 +51,5 @@ public class MainMenu {
                     System.out.println("Ingresa una opcion correcta");
             }
         } while (response !=0);
-
     }
-
 }
