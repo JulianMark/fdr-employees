@@ -1,6 +1,7 @@
 package supplier;
 
 import model.dao.CampaignList;
+import model.http.campaigns.CampaignStatusResponse;
 import org.springframework.http.HttpEntity;
 import org.springframework.http.HttpHeaders;
 import org.springframework.http.HttpMethod;
@@ -20,29 +21,21 @@ public class CampaignSupplier {
         return responseEntity;
     }
 
-    /*public static ResponseEntity<CampaignResponse> getEmployeeCampaign (Integer idCampaign) {
+    public static ResponseEntity<CampaignStatusResponse> getCampaignStatus (Integer idCampaign) {
 
         HttpHeaders headers = new HttpHeaders();
         headers.set("Accept", "application/json");
 
-        Map<String, String> params = new HashMap<String, String>();
-        params.put("id", String.valueOf(campaignRequest.getId()));
-        params.put("name", String.valueOf(campaignRequest.getName()));
-        params.put("lastName", String.valueOf(campaignRequest.getLastName()));
-        params.put("totalDonations", String.valueOf(campaignRequest.getTotalDonations()));
-        params.put("totalAmountDonations", String.valueOf(campaignRequest.getTotalAmountDonations()));
-        params.put("totalProductiveHours", String.valueOf(campaignRequest.getTotalProductiveHours()));
-        params.put("totalNonProductiveHours", String.valueOf(campaignRequest.getTotalNonProductiveHours()));
-        params.put("initialDate", String.valueOf(campaignRequest.getInitialDate()));
-        params.put("finalDate", String.valueOf(campaignRequest.getFinalDate()));
+        Map<String, String> params = new HashMap<>();
+        params.put("idCampaign", String.valueOf(idCampaign));
 
-
-        String url = "http://localhost:9094/employee/manager/obtainEmployeeAssignmentCampaign";
+        String url = "http://localhost:9094/employee/manager/obtainStatusCampaign";
         HttpEntity entity = new HttpEntity(params, headers);
 
         RestTemplate restTemplate = new RestTemplate();
-        ResponseEntity<CampaignResponse> responseEntity = restTemplate.exchange(url, HttpMethod.POST, entity, CampaignResponse.class);
+        ResponseEntity<CampaignStatusResponse> responseEntity = restTemplate
+                .exchange(url, HttpMethod.POST, entity, CampaignStatusResponse.class);
 
         return responseEntity;
-    }*/
+    }
 }
