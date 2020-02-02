@@ -3,17 +3,15 @@ package menu.employeeMenu.login.facer;
 import menu.employeeMenu.indicatorMenu.ShowIndicatorsMenu;
 import model.Employee;
 import model.dto.DonationDTO;
-import model.http.donations.DonationRequest;
 import model.http.donations.DonationResponse;
 import org.springframework.http.ResponseEntity;
 
 import java.util.Scanner;
 
 import static menu.ReturnMenu.returnMenu;
-import static menu.employeeMenu.donationMenu.showDonationMenu.showDonationMenu;
+import static menu.employeeMenu.controller.DonationController.obtainDonationResponse;
 import static menu.employeeMenu.donationMenu.showStatusEmployee.showStatusEmployee;
 import static menu.employeeMenu.login.teamLeader.TeamLeaderMenu.showTeamLeaderMenu;
-import static supplier.DonationSupplier.addDonation;
 
 public class FacerMenu {
 
@@ -43,16 +41,18 @@ public class FacerMenu {
                 case 2:
                     flag = false;
                     DonationDTO donationDTO = showStatusEmployee(employee.getId());
-                    if (donationDTO.getIdEmployee() != 0
-                            && (donationDTO.getResponse().equals("Y")
-                                || donationDTO.getResponse().equals("y"))){
-                        DonationRequest donationRequest = showDonationMenu(donationDTO);
-                        ResponseEntity<DonationResponse> responseEntity = addDonation(donationRequest);
+                    ResponseEntity<DonationResponse> responseEntity = obtainDonationResponse(donationDTO);
+                    if(responseEntity != null) {
                         if (responseEntity.getStatusCode().value() == 200){
-                            if (responseEntity.getBody().getResult() == 0) System.out.println("Donación ingresada correctamente");
-                            response = returnMenu();
+                                if (responseEntity.getBody().getResult() == 0) {
+                                    System.out.println("Donación ingresada correctamente");
+                                    response = returnMenu();
+                                }
                         }
-                    }else response = returnMenu();
+                    }else {
+                        System.out.println("Si la campaña no corresponde, comuniquese con su TL\n");
+                        response = returnMenu();
+                    }
                     break;
                 case 0:
                     if(employee.getIdType() == 2) {

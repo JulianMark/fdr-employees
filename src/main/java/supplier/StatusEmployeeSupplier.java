@@ -10,7 +10,8 @@ public class StatusEmployeeSupplier {
 
         final String url = "http://localhost:9093/employee/status/" + idEmployee;
         RestTemplate restTemplate = new RestTemplate();
-        ResponseEntity<EmployeeStatusResponse> responseEntity = restTemplate.getForEntity(url, EmployeeStatusResponse.class);
+        ResponseEntity<EmployeeStatusResponse> responseEntity = restTemplate.getForEntity(url
+                , EmployeeStatusResponse.class);
         return responseEntity;
     }
 }

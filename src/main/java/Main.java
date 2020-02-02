@@ -11,9 +11,9 @@ public class Main  {
 
     public static void main(String[] args){
         //Employee employee = new Employee(2,"Daniela", "Sanz",2);
-        showMenu();
-        //Employee employee = new Employee(1,"Julian","Mark",1);
-        //showFacerMenu(employee);
+        //showMenu();
+        Employee employee = new Employee (1,"JULIAN","MARK",1,null);
+        showFacerMenu(employee);
         //showTeamLeaderMenu(employee);
         //Campaign campaign = new Campaign(1,"RIO CUARTO",1,"AFULIC");
         //showCampaignMenuOption(campaign);

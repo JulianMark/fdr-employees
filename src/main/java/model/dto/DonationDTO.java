@@ -16,8 +16,4 @@ public class DonationDTO {
     private Integer idEmployee;
     private Integer idCampaign;
     private String response;
-
-    public DonationDTO(String response) {
-        this.response = response;
-    }
 }
