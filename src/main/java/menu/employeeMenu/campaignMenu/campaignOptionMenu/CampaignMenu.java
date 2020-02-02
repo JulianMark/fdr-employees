@@ -1,6 +1,7 @@
 package menu.employeeMenu.campaignMenu.campaignOptionMenu;
 
 import model.Campaign;
+import model.Employee;
 import model.dto.EmployeeCampaign;
 import model.http.campaigns.CampaignStatusResponse;
 import org.springframework.http.ResponseEntity;
@@ -10,12 +11,15 @@ import java.text.DecimalFormatSymbols;
 import java.util.List;
 import java.util.Scanner;
 
-import static menu.ReturnMenu.returnMenu;
+import static menu.employeeMenu.campaignMenu.CampaignListMenu.showCampaignListMenu;
 import static supplier.CampaignSupplier.getCampaignStatus;
 
 public class CampaignMenu  {
 
-    public static void showCampaignMenuOption (Campaign campaign){
+    private static Scanner sc;
+    private static int response = 0;
+
+    public static void showCampaignMenuOption (Employee employee, Campaign campaign){
         Scanner sc = new Scanner(System.in);
         System.out.println(campaign.getName()
                 +" "+descriptionTypeCampaign(campaign.getCampaignType())
@@ -25,14 +29,18 @@ public class CampaignMenu  {
         if(responseEntity.getStatusCode().value() == 200) {
             getEmployeesCampaignList(responseEntity.getBody().getEmployeeList());
         } else System.out.println("error");
+
+        System.out.println(" ");
+        System.out.println("0. Volver al menu anterior");
+
+        sc =  new Scanner(System.in);
+        response = sc.nextInt();
+
+        if(response == 0) {
+            showCampaignListMenu(employee);
+        }
     }
 
-    private static String descriptionTypeCampaign (Integer campaignType){
-        if (campaignType == 1) return "ITINERANCIA";
-        if (campaignType == 2) return "VIA PUBLICA";
-        if (campaignType == 3) return "EVENTOS";
-        return "";
-    }
 
     private static void getEmployeesCampaignList (List<EmployeeCampaign> list) {
         String tabulation = "%-10s%-10s%-10s%-10s%-10s%-10s%-10s%-10s%-10s%-30s%-20s\n";
@@ -68,8 +76,16 @@ public class CampaignMenu  {
         System.out.printf(tabulation,"","TOTALES",sumTotalDonations,sumTotalAmountDonations
                 ,roundToFloat(totalAverageCatchment),roundToFloat(totalAverageAmount),roundToFloat(TC)
                 ,roundToFloat(sumTotalProductiveHours),roundToFloat(sumTotalNonProductiveHours),"-","-");
+
     }
 
+
+    private static String descriptionTypeCampaign (Integer campaignType){
+        if (campaignType == 1) return "ITINERANCIA";
+        if (campaignType == 2) return "VIA PUBLICA";
+        if (campaignType == 3) return "EVENTOS";
+        return "";
+    }
     private static Float roundToFloat (Float number) {
         DecimalFormatSymbols colonFormat = new DecimalFormatSymbols();
         colonFormat.setDecimalSeparator('.');
